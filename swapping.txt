@@ -12,17 +12,24 @@ Sw $2, 0x1($0)
 Sw $3, 0x2($0) 
 ADDI $4 , $0, 15 # $4 = 15
 ADDI $5 , $0, 20 # $5 = 20
+NOP
 ADD $5 , $4, $5
+NOP
 SUB $4 , $5, $4
+NOP
 SUB $5 , $5, $4
 # For word addressable 
 Sw $4, 0x3($0) 
 Sw $5, 0x4($0) 
 ADDI $6, $0 , 25 # $6 = 25
 ADDI $7, $0 , 30 # $7 = 30
+NOP
 XOR $6, $6 , $7
+NOP
 XOR $7, $6 , $7
+NOP
 XOR $6, $6 , $7
+NOP
 # For word addressable 
 Sw $6, 0x5($0) 
 Sw $7, 0x6($0) 
